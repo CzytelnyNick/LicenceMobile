@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="151dp"
+        android:layout_height="29dp"
+        android:text="Licencja"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur congue finibus. Aliquam vel turpis nec est viverra bibendum in at est. Morbi ligula erat, tempus et porttitor vitae, iaculis vitae ante. Suspendisse hendrerit dui eu pharetra consequat. Quisque justo mi, varius vitae venenatis a, placerat sed nisi. Sed augue felis, pulvinar id lacinia vitae, dignissim sit amet enim. Cras vehicula a sapien in sagittis. Aliquam sollicitudin, diam nec tincidunt faucibus, purus felis tempus eros, in vehicula massa eros eget tortor. Praesent sed nisi maximus dui consequat rutrum. Pellentesque quis scelerisque sem, et viverra dui.
+
+Mauris bibendum non arcu nec sagittis. Fusce imperdiet eros convallis, porttitor eros eget, commodo purus. Phasellus ultrices sagittis vulputate. Sed tortor risus, porta et pulvinar quis, consequat vitae felis. Fusce ante turpis, sagittis id iaculis mattis, consectetur in elit. Aenean sodales imperdiet ultricies. Nullam eget pulvinar lorem. Morbi quis facilisis massa. Mauris id sodales ante, ac consequat orci. Suspendisse a lacus sem. Morbi maximus nunc sem, varius blandit tortor molestie eget. Sed magna risus, ornare a semper quis, ullamcorper et nunc. Mauris dolor tortor, tempus sit amet eros sed, faucibus fringilla leo. In congue turpis et augue mattis rutrum. Fusce mauris felis, posuere non pharetra quis, malesuada vitae nisi. Curabitur varius, neque ut pharetra tincidunt, purus libero efficitur risus, sed ornare erat nulla et elit."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tak"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Przeczytałem"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nie przeczytałem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioButton"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
+        tools:layout_editor_absoluteX="175dp" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Czy akceptujesz umowe licencyjną? "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="520dp" />
+</RelativeLayout>
