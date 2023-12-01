@@ -4,15 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:backgroundTint="#673AB7"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="151dp"
-        android:layout_height="29dp"
-        android:text="Licencja"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/purple"
+        android:text="@string/title"
+
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="27sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,67 +28,90 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/purple"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consectetur congue finibus. Aliquam vel turpis nec est viverra bibendum in at est. Morbi ligula erat, tempus et porttitor vitae, iaculis vitae ante. Suspendisse hendrerit dui eu pharetra consequat. Quisque justo mi, varius vitae venenatis a, placerat sed nisi. Sed augue felis, pulvinar id lacinia vitae, dignissim sit amet enim. Cras vehicula a sapien in sagittis. Aliquam sollicitudin, diam nec tincidunt faucibus, purus felis tempus eros, in vehicula massa eros eget tortor. Praesent sed nisi maximus dui consequat rutrum. Pellentesque quis scelerisque sem, et viverra dui.
 
 Mauris bibendum non arcu nec sagittis. Fusce imperdiet eros convallis, porttitor eros eget, commodo purus. Phasellus ultrices sagittis vulputate. Sed tortor risus, porta et pulvinar quis, consequat vitae felis. Fusce ante turpis, sagittis id iaculis mattis, consectetur in elit. Aenean sodales imperdiet ultricies. Nullam eget pulvinar lorem. Morbi quis facilisis massa. Mauris id sodales ante, ac consequat orci. Suspendisse a lacus sem. Morbi maximus nunc sem, varius blandit tortor molestie eget. Sed magna risus, ornare a semper quis, ullamcorper et nunc. Mauris dolor tortor, tempus sit amet eros sed, faucibus fringilla leo. In congue turpis et augue mattis rutrum. Fusce mauris felis, posuere non pharetra quis, malesuada vitae nisi. Curabitur varius, neque ut pharetra tincidunt, purus libero efficitur risus, sed ornare erat nulla et elit."
+        android:textColor="@color/white"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="78dp" />
 
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tak"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="589dp" />
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nie"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        tools:layout_editor_absoluteY="589dp" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Przeczytałem"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="421dp" />
+            android:text="Tak"
+            app:cornerRadius="40px"
+            app:strokeWidth="10px" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nie przeczytałem"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
-        tools:layout_editor_absoluteY="421dp" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/black"
+            android:text="Nie" />
+
+
+    </LinearLayout>
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton2"
-        tools:layout_editor_absoluteX="175dp" />
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#673AB7"
+            android:buttonTint="#FFFFFF"
+            android:text="Przeczytałem"
+            android:textColor="@color/white"
+            app:cornerRadius="100px" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="#673AB7"
+            android:textColor="@color/white"
+            android:text="Nie przeczytałem" />
+    </RadioGroup>
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#673AB7"
+        android:textColor="@color/white"
         android:text="Czy akceptujesz umowe licencyjną? "
+        android:textSize="20sp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
