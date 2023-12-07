@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerVertical="true"
-    android:backgroundTint="#673AB7"
+    android:background="#673AB7"
+
     tools:context=".MainActivity">
 
     <TextView
@@ -15,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:background="@color/purple"
         android:text="@string/title"
-
+        android:fontFamily=""
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="27sp"
@@ -84,7 +85,7 @@ Mauris bibendum non arcu nec sagittis. Fusce imperdiet eros convallis, porttitor
             android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#673AB7"
+            android:background="@color/purple"
             android:buttonTint="#FFFFFF"
             android:text="Przeczytałem"
             android:textColor="@color/white"
@@ -95,9 +96,9 @@ Mauris bibendum non arcu nec sagittis. Fusce imperdiet eros convallis, porttitor
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:background="#673AB7"
-            android:textColor="@color/white"
-            android:text="Nie przeczytałem" />
+            android:background="@color/purple"
+            android:text="Nie przeczytałem"
+            android:textColor="@color/white" />
     </RadioGroup>
 
     <TextView
@@ -107,9 +108,9 @@ Mauris bibendum non arcu nec sagittis. Fusce imperdiet eros convallis, porttitor
         android:layout_below="@+id/radioGroup"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:background="#673AB7"
-        android:textColor="@color/white"
+        android:background="@color/purple"
         android:text="Czy akceptujesz umowe licencyjną? "
+        android:textColor="@color/white"
         android:textSize="20sp"
 
         app:layout_constraintEnd_toEndOf="parent"
